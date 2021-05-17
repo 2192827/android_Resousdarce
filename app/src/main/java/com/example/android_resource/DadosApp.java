@@ -27,7 +27,7 @@ public class DadosApp {
                 "sem parar de bater;\n" +
                 "4) Adicione as claras em neve e o fermento.", ""));
         receita.add(new PassoReceita("3. Passo --> Colocar o bolo na forma:\n" +
-                "                \"1) Despeje a massa em uma forma.", ""));
+                "1) Despeje a massa em uma forma.", ""));
         receita.add(new PassoReceita("4. Passo --> Coloque o bolo no forno:\n" +
                 "1) Asse em forno médio 180 °C, preaquecido, por aproximadamente 40 minutos, de forma que ao furar o bolo com um garfo, este saia limpo", ""));
         receita.add(new PassoReceita("5. Passo --> Finalizar o bolo:\n" +
