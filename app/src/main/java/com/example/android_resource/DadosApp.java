@@ -1,7 +1,12 @@
 package com.example.android_resource;
 
+import android.content.Intent;
+
 import java.util.ArrayList;
 import java.util.List;
+
+
+
 
 public class DadosApp {
 
@@ -46,6 +51,7 @@ public class DadosApp {
     public void avancar() {
         if (posicao < total_passos)
             posicao++;
+
     }
 
     public void retroceder() {
@@ -56,4 +62,6 @@ public class DadosApp {
     public void marcarFeito() {
         receita.get(posicao - 1).setFeito(true);
     }
+
+
 }
