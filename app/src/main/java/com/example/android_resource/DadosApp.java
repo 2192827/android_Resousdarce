@@ -20,23 +20,20 @@ public class DadosApp {
                 "        5) 3 colheres de leite;\n" +
                 "        6) 1 colher bem cheia de fermento em pó", ""));
         receita.add(new PassoReceita("2. Passo --> Mistura de ingredientes:\n" +
-                "                \"        1) Bata as claras em neve e reserve;\n" +
-                "                \"        2) Misture as gemas, a margarina e" +
+                "1) Bata as claras em neve e reserve;\n" +
+                "2) Misture as gemas, a margarina e" +
                 " o açúcar até obter uma massa homogênea;\n" +
-                "                \"        3) Acrescente o leite e a farinha de trigo aos poucos, " +
+                "3) Acrescente o leite e a farinha de trigo aos poucos, " +
                 "sem parar de bater;\n" +
-                "                \"        4) Adicione as claras em neve e o fermento.", ""));
+                "4) Adicione as claras em neve e o fermento.", ""));
         receita.add(new PassoReceita("3. Passo --> Colocar o bolo na forma:\n" +
                 "                \"1) Despeje a massa em uma forma.", ""));
         receita.add(new PassoReceita("4. Passo --> Coloque o bolo no forno:\n" +
-                "                \"        1) Asse em forno médio 180 °C, preaquecido,\n" +
-                "                \"        por aproximadamente 40 minutos,\n" +
-                "                \"        de forma que ao furar o bolo com um garfo,\n" +
-                "                \"        este saia limpo", ""));
+                "1) Asse em forno médio 180 °C, preaquecido, por aproximadamente 40 minutos, de forma que ao furar o bolo com um garfo, este saia limpo", ""));
         receita.add(new PassoReceita("5. Passo --> Finalizar o bolo:\n" +
-                "                \"        1) Retire o bolo do forno;\n" +
-                "                \"        2) Coloque o bolo num prato;\n" +
-                "                \"        3) Corte o bolo e prove-o", ""));
+                "1) Retire o bolo do forno;\n" +
+                "2) Coloque o bolo num prato;\n" +
+                "3) Corte o bolo e prove-o", ""));
 
         posicao = 1;
         total_passos = receita.size();
