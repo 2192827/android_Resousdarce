@@ -29,7 +29,7 @@ public class activity_tarefas extends AppCompatActivity {
         boton=findViewById(R.id.Button);
         cajadetexto= findViewById(R.id.textView);
         cajadetexto.setText(dadosApp.getTextoPassoReceita());
-        ver_imagen=findViewById(R.id.imageView);
+
     }
 
     //Metodos
@@ -43,7 +43,7 @@ public class activity_tarefas extends AppCompatActivity {
                     //TODO
 
                     //   if (estadoBoton==true){
-                    ver_imagen.setImageResource(R.drawable.image);
+
 
                     dadosApp.avancar();
                     cajadetexto.setText(dadosApp.getTextoPassoReceita());
