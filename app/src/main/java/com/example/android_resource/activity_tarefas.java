@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class activity_tarefas extends AppCompatActivity {
+public class activity_tarefas extends AppCompatActivity  {
 
     boolean estadoBoton;
     Button boton;
@@ -52,11 +52,11 @@ public class activity_tarefas extends AppCompatActivity {
 
                     estadoBoton= false;
 
-                    // else{
-                    //         boton.setText("Adios");
-                    //      cajadetexto.setText("Adios");
-                    //    estadoBoton= false;
-                    // }
+                    if(dadosApp.getPosicao() == dadosApp.getSizeListaPassos()){
+
+                        Intent inicio = new Intent(this,MainActivity.class);
+                        startActivity(inicio);
+                     }
 
                 }
                 return true;
@@ -77,13 +77,13 @@ public class activity_tarefas extends AppCompatActivity {
                 }
 
                 return true;
-            case KeyEvent.KEYCODE_ENTER:
+          /*  case KeyEvent.KEYCODE_ENTER:
                 if (action == KeyEvent.ACTION_DOWN) {
                     estadoBoton= false;
 
                     Intent inicio = new Intent(this,MainActivity.class);
                     startActivity(inicio);
-                }
+                }*/
             default:
                 return super.dispatchKeyEvent(event);
         }

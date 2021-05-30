@@ -51,10 +51,10 @@ public class DadosApp extends MainActivity {
     public void avancar() {
         if (posicao < listaPassos.size()){
             posicao++;
-
+/*
             if (posicao == listaPassos.size()){
                 listviewTarefas();
-            }
+            }*/
         }
     }
 
@@ -63,9 +63,14 @@ public class DadosApp extends MainActivity {
             posicao--;
     }
 
+    public int getPosicao()  {
+        return posicao;
+    }
+    public int getSizeListaPassos()  {
+        return listaPassos.size();
+    }
 
-
-    public void marcarFeito() {
+        public void marcarFeito() {
         listaPassos.get(posicao - 1).setFeito(true);
     }
 
