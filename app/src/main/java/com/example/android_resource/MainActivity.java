@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView ver_imagem;
     Button botao;
     private DadosApp dadosApp;
+    private int positionTarefa;
 
     ListView listView;
 
@@ -97,12 +98,16 @@ public class MainActivity extends AppCompatActivity {
 
 
                 if(position == 0){
+                    positionTarefa = position;
                     dadosApp = new DadosApp();
                     Intent Tarefa1 = new Intent(view.getContext(),activity_tarefas.class);
                     startActivity(Tarefa1);
                 }
                 if(position == 1){
-
+                    positionTarefa = position;
+                    dadosApp = new DadosApp();
+                    Intent Tarefa2 = new Intent(view.getContext(),activity_tarefas.class);
+                    startActivity(Tarefa2);
                 }
             }
         });
@@ -151,6 +156,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity( anterior );
     }
 
+    public int getPositionTarefa(){
+        return  positionTarefa;
 
+    }
 
 }
