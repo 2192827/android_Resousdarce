@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView ver_imagem;
     Button botao;
     private DadosApp dadosApp;
+
     ListView listView;
 
     @Override
@@ -65,14 +66,14 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(passo2);
                 }
                 if(position == 2){
-                listview2();
+                listviewTarefas();
                 }
             }
         });
         return true;
     }
 
-    public boolean listview2(){
+    public boolean listviewTarefas(){
 
         setContentView( R.layout.activity_listview);
 
@@ -93,9 +94,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                dadosApp = new DadosApp();
+
 
                 if(position == 0){
+                    dadosApp = new DadosApp();
                     Intent Tarefa1 = new Intent(view.getContext(),activity_tarefas.class);
                     startActivity(Tarefa1);
                 }

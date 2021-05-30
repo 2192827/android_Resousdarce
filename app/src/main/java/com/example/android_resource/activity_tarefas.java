@@ -18,6 +18,8 @@ public class activity_tarefas extends AppCompatActivity {
 
     private DadosApp dadosApp;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         dadosApp = new DadosApp();
